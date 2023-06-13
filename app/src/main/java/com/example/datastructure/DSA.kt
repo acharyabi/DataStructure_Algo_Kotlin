@@ -35,7 +35,9 @@ fun main(){
     }
     */
 
+    /*
     //Immutable Set
+
     var immutableSet = setOf(5,6,"Hello",6,1,0,1)
 
     //Only the unique elements will be printed
@@ -56,5 +58,24 @@ fun main(){
     for(item in mutableSet){
         println(item)
     }
+    */
+    //Immutable Map
+    var immMap = mapOf(1 to "Jack", 2 to "John", 9 to "Johny")
+    print(immMap[1])
+    for (key in immMap.keys){
+        println(immMap[key])
+    }
+    //Mutable Map
+    var mutMap = mutableMapOf<Int, String>(1 to "Lily", 2 to "Helem", 6 to "Mandy")
 
+    //add elements to maps
+    mutMap.put(7, "Hero")
+
+    //Remove
+    mutMap.remove(2)
+
+    //Print Inside Mutable Map
+    for (item in mutMap.values){
+        println(item)
+    }
 }
